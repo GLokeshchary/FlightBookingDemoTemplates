@@ -1,0 +1,82 @@
+.home-container{
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    background-color: #05203c;
+    padding: 25px;
+    
+    /* font-size: 25px;
+    font-weight: 500; */
+}
+.search-heading{
+    font-size: 25px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.search-form{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    
+}
+.search-form .fieldInput{
+    display: flex;
+    flex-direction: column;
+    
+    width: 200px;
+    background-color: white;
+    color: grey;
+    font-weight: 600;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px;
+}
+.search-form .search-button{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 15, 237);
+}
+.search-button button{
+    background:none;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.fieldInput input{
+    height: 30px;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 6px;
+    font-size: 15px;
+}
+input:focus{
+    border-color: blue;
+}
+@media only screen and (max-width: 768px) {
+    .home-container {
+        padding: 15px;
+    }
+
+    .search-heading {
+        font-size: 20px;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form .fieldInput {
+        width: 100%;
+        padding-left: 10px;
+    }
+    .search-form .search-button{
+        width: 100%;
+        height: 60px;
+    }
+}
